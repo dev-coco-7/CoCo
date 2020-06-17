@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/time_line_top"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_0"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@color/weChat_gray_m" />
+
+    <ImageView
+        android:id="@+id/time_line_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_back"/>
+
+
+    <ImageView
+        android:id="@+id/time_line_bottom"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_0"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@color/weChat_gray_m" />
+
+</LinearLayout>

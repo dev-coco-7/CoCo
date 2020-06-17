@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <color name="wechat_gray_s">#F1F1F1</color>
-    <color name="wechat_gray_m">#AAAAAA</color>
-    <color name="wechat_gray_l">#888888</color>
+    <color name="weChat_gray_s">#F1F1F1</color>
+    <color name="weChat_gray_m">#AAAAAA</color>
+    <color name="weChat_gray_l">#888888</color>
+    <color name="green">#32CD32</color>
+    <color name="white">#FFFFFF</color>
+
 
 </resources>

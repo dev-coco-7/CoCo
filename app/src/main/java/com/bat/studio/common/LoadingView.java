@@ -18,8 +18,8 @@ import com.bat.studio.utils.DeviceUtils;
 import com.bat.studio.utils.FilletViewUtils;
 
 public class LoadingView extends AlertDialog {
-   private TextView loading_text;
-   private ProgressBar loadingDialog;
+    private TextView loading_text;
+    private ProgressBar loadingDialog;
 
     public LoadingView(@NonNull Context context) {
         super(context);
@@ -34,10 +34,11 @@ public class LoadingView extends AlertDialog {
     }
 
 
-    public void setLoadingText(String loadingText){
-        if (loading_text!=null){
+    public LoadingView setLoadingText(String loadingText) {
+        if (loading_text != null) {
             loading_text.setText(loadingText);
         }
+        return this;
     }
 
     @Override

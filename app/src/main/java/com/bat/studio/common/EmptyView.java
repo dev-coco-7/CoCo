@@ -40,19 +40,23 @@ public class EmptyView extends LinearLayout {
         empty_layout = findViewById(R.id.empty_layout);
     }
 
-    public void setIcon(@DrawableRes int iconRes) {
+    public EmptyView setIcon(@DrawableRes int iconRes) {
         icon.setImageResource(iconRes);
+        return this;
     }
 
-    public void setText(String textRes) {
+    public EmptyView setText(String textRes) {
         text.setText(textRes);
+        return this;
     }
 
-    public void show() {
+    public EmptyView show() {
         empty_layout.setVisibility(VISIBLE);
+        return this;
     }
 
-    public void hide() {
+    public EmptyView hide() {
         empty_layout.setVisibility(GONE);
+        return this;
     }
 }

@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bat.studio.R;
+import com.bat.studio.common.CenterDialog;
 import com.bat.studio.common.EmptyView;
 import com.bat.studio.common.LoadingView;
 import com.bat.studio.utils.StatusBarUtils;
