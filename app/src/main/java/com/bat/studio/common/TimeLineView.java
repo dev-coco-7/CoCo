@@ -64,13 +64,6 @@ public class TimeLineView extends LinearLayout {
         return this;
     }
 
-  /*
-  暂不支持该功能
-   public TimeLineView setIconTint(@ColorRes int color) {
-        icon.setColorFilter(color);
-        return this;
-    }*/
-
     public TimeLineView hideTop() {
         top.setVisibility(GONE);
         return this;

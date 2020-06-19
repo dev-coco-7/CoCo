@@ -18,22 +18,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bat.studio.R;
-import com.bat.studio.common.CenterDialog;
 import com.bat.studio.common.EmptyView;
 import com.bat.studio.common.LoadingView;
+import com.bat.studio.http.ApiStore;
+import com.bat.studio.http.RetrofitX;
 import com.bat.studio.utils.StatusBarUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
     public static List<BaseActivity> activities;
     private long firstClickTime = 0L;
     public static LoadingView loadingView;
     public static EmptyView emptyView;
+    public static ApiStore apiStore;
     private Toolbar toolbar;
     private ImageView toolbar_icon;
     private TextView toolbar_text;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +47,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         setContentView(initLayout());
         loadingView = new LoadingView(this);
         emptyView = new EmptyView(this);
+        apiStore=RetrofitX.getInstance().getRetrofit().create(ApiStore.class);
         toolbar = findViewById(R.id.toolbar);
         toolbar_icon = findViewById(R.id.toolbar_icon);
         toolbar_icon.setOnClickListener(this);
